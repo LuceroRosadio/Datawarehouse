@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        maven { url "https://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.2.3.RELEASE")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
+apply  plugin: 'war'
+mainClassName = "com.reportes.Application"
+
+war {
+    baseName = 'gs-rest-service'
+    version =  '0.1.1'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework:spring-jdbc")
+    compile("org.mybatis:mybatis:3.2.7")
+    compile('org.mybatis:mybatis-spring:1.2.2')
+    compile ('commons-dbcp:commons-dbcp:1.4')
+    compile fileTree(dir: 'libs', include: '*.jar')
+    testCompile("junit:junit")
+
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
+
+
+

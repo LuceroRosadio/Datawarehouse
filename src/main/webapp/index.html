@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+    <head lang="en">
+        <meta charset="utf-8">
+        <title>Reportes de Ventas</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">  
+        <link rel="stylesheet" type="text/css" href="css/ng-grid.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="js/d3.v3.min.js"></script>
+        <script src="js/dimple.v2.1.2.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/underscore.js"></script>
+        <script type="text/javascript" src="js/ng-grid.debug.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+    </head>
+    <body ng-controller="MyCtrl" style="text-align:center">
+        <div class="jumbotron">
+        <h1>Reportes de ventas</h1>
+        <p><a class="btn btn-primary btn-lg" ng-click="add1()" role="button">Reporte 1</a>
+        <a class="btn btn-primary btn-lg" ng-click="add2()" role="button">Reporte 2</a></p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+        <div class="gridStyle" class="col-md-9" ng-grid="gridOptions"></div>
+        
+        </div>
+        <div id="chartContainer" class="col-md-6">
+  <script type="text/javascript">
+   /* var svg = dimple.newSvg("#chartContainer", 590, 500);
+
+    d3.json("http://localhost:8080/ventasPorCategoria2", function(error, data) {
+      var myChart = new dimple.chart(svg, data);
+      myChart.setBounds(60, 30, 510, 305)
+      var x = myChart.addCategoryAxis("x", ["categoria","anio"]);
+      myChart.addMeasureAxis("y", "totalFacturado");
+      myChart.addSeries("anio", dimple.plot.bar);
+      myChart.addLegend(65, 10, 510, 20, "right");
+      myChart.draw();
+
+    });*/
+  </script>
+</div>
+</div>
+    </body>
+</html>
