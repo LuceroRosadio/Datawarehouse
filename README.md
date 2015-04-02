@@ -4,7 +4,7 @@ Pasos para ejecutar este proyecto:
 
    2)Ejecuta a través de la consola el comando gradlew bootRun dentro del directo del proyecto.
 
-     Por ejemplo C:\Users\lucero\Downloads\datawarehouse-master> gradlew bootRun
+     Por ejemplo C:\Users\lucero\Downloads\laboratorio1-master> gradlew bootRun
 
    3)Ingresa a la siguiente dirección http://localhost:8080
 
