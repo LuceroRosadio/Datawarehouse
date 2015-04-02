@@ -1,12 +1,12 @@
 Pasos para ejecutar este proyecto:
 
-   1)Descarga y descomprime el zip desde aqui https://github.com/LuceroRosadio/Datawarehouse
+   1)Descarga y descomprime el zip desde aqui https://github.com/LuceroRosadio/Laboratorio1
 
-   2)Ejecuta a través de la consola el comando gradlew bootRun dentro del directo del proyecto.
+   2)Ejecuta a travÃ©s de la consola el comando gradlew bootRun dentro del directo del proyecto.
 
      Por ejemplo C:\Users\lucero\Downloads\datawarehouse-master> gradlew bootRun
 
-   3)Ingresa a la siguiente dirección http://localhost:8080
+   3)Ingresa a la siguiente direcciÃ³n http://localhost:8080
 
 
 Integrantes:
