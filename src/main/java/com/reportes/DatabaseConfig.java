@@ -18,7 +18,7 @@ public class DatabaseConfig {
     public DataSource dataSource() {
         	BasicDataSource dataSource = new BasicDataSource();
 	       dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-	       dataSource.setUrl("jdbc:sqlserver://PRACTIAPENB029\\SQLEXPRESS;databaseName=NORTHWND");
+	       dataSource.setUrl("jdbc:sqlserver://localhost\\SQLEXPRESS;databaseName=NORTHWND");
 	       dataSource.setUsername("sa");
 	       dataSource.setPassword("123456");
 	       return dataSource;
